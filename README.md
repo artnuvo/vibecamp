@@ -2,8 +2,20 @@
 
 A Cloudflare Workers-hosted static website for Tribe Camp — a family retreat gathering near Barcelona.
 
-🔗 **Live Site**: (deployed via Cloudflare Workers)
+🔗 **Live Site**: https://vibecamp.artpi.workers.dev/  
 📁 **Repository**: `~/GIT/vibecamp`
+
+---
+
+## ⚠️ AUTO-DEPLOY ENABLED
+
+**This repository auto-deploys to production on every push to `main`.**
+
+The website at https://vibecamp.artpi.workers.dev/ updates immediately when code is pushed.
+
+**→ Before pushing any changes, ask for confirmation from the team.**
+
+---
 
 ---
 
