@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribe Camp — A Manifesto for Family Living</title>
+    <title>Tribe Camp — A Week for Families</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
@@ -36,7 +36,6 @@
             font-family: 'Space Grotesk', sans-serif;
         }
         
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -80,7 +79,6 @@
             color: var(--terracotta);
         }
         
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -91,16 +89,6 @@
             padding: 8rem 2rem 6rem;
             background: linear-gradient(180deg, var(--sand) 0%, var(--cream) 100%);
             position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%232d4a3e' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
         
         .hero-content {
@@ -148,7 +136,6 @@
             max-width: 650px;
             margin: 0 auto 3rem;
             color: var(--forest);
-            opacity: 0.85;
             line-height: 1.8;
         }
         
@@ -184,7 +171,6 @@
             color: white;
         }
         
-        /* Sections */
         section {
             padding: 7rem 2rem;
         }
@@ -206,7 +192,6 @@
             letter-spacing: -0.01em;
         }
         
-        /* Manifesto Section */
         .manifesto {
             background: var(--forest);
             color: var(--cream);
@@ -218,13 +203,12 @@
         }
         
         .manifesto-statement {
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             line-height: 1.9;
             text-align: center;
             max-width: 750px;
             margin: 0 auto 3rem;
             font-style: italic;
-            opacity: 0.95;
         }
         
         .manifesto-divider {
@@ -243,26 +227,22 @@
         .manifesto-points li {
             padding: 1.25rem 0;
             border-bottom: 1px solid rgba(255,255,255,0.1);
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             line-height: 1.7;
-            position: relative;
-            padding-left: 2.5rem;
         }
         
         .manifesto-points li:last-child {
             border-bottom: none;
         }
         
-        .manifesto-points li::before {
-            content: '◆';
-            position: absolute;
-            left: 0;
+        .manifesto-points li strong {
             color: var(--sunset);
-            font-size: 0.8rem;
-            top: 1.5rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.05rem;
         }
         
-        /* The Invitation Section */
         .invitation {
             background: var(--sand);
             text-align: center;
@@ -297,9 +277,6 @@
             font-size: 1.1rem;
             margin-bottom: 0.75rem;
             color: var(--forest);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
         
         .pillar p {
@@ -308,14 +285,13 @@
             line-height: 1.6;
         }
         
-        /* The Dream Section */
         .dream {
             background: var(--cream);
         }
         
         .dream-text {
             font-size: 1.2rem;
-            line-height: 2;
+            line-height: 1.9;
         }
         
         .dream-text p {
@@ -331,12 +307,10 @@
             padding-left: 2rem;
             margin: 2.5rem 0;
             font-style: italic;
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--forest);
-            opacity: 0.9;
         }
         
-        /* Early Adopters Section */
         .founding {
             background: linear-gradient(135deg, var(--terracotta) 0%, var(--ochre) 100%);
             color: white;
@@ -348,10 +322,9 @@
         }
         
         .founding > .container > p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             max-width: 650px;
             margin: 0 auto 2rem;
-            opacity: 0.95;
             line-height: 1.8;
         }
         
@@ -366,7 +339,7 @@
         }
         
         .founding-details h3 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -406,7 +379,6 @@
             color: white;
         }
         
-        /* Vibe Gallery */
         .vibe {
             background: var(--sand);
         }
@@ -427,15 +399,10 @@
             padding: 2rem 1.5rem;
             border-radius: 12px;
             text-align: center;
-            transition: transform 0.3s;
-        }
-        
-        .vibe-card:hover {
-            transform: translateY(-5px);
         }
         
         .vibe-icon {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 1rem;
         }
         
@@ -452,7 +419,6 @@
             line-height: 1.5;
         }
         
-        /* Connect Section */
         .connect {
             background: var(--forest);
             color: var(--cream);
@@ -467,7 +433,6 @@
             font-size: 1.15rem;
             max-width: 550px;
             margin: 0 auto 2rem;
-            opacity: 0.9;
         }
         
         .email-cta {
@@ -480,15 +445,8 @@
             text-decoration: none;
             border-bottom: 2px solid var(--sunset);
             padding-bottom: 2px;
-            transition: all 0.3s;
         }
         
-        .email-cta a:hover {
-            color: white;
-            border-color: white;
-        }
-        
-        /* Footer */
         footer {
             background: var(--cream);
             color: var(--forest);
@@ -502,7 +460,6 @@
             font-size: 0.9rem;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -510,10 +467,6 @@
             
             .hero {
                 padding: 6rem 1.5rem 4rem;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
             }
             
             .btn-secondary {
@@ -525,12 +478,7 @@
                 padding: 4rem 1.5rem;
             }
             
-            .manifesto-statement {
-                font-size: 1.15rem;
-            }
-            
             .dream-quote {
-                font-size: 1.1rem;
                 padding-left: 1.5rem;
             }
             
@@ -541,220 +489,213 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <a href="#" class="logo">🌲 Tribe Camp</a>
         <ul class="nav-links">
-            <li><a href="#manifesto">Manifesto</a></li>
-            <li><a href="#dream">The Dream</a></li>
-            <li><a href="#founding">Join Us</a></li>
-            <li><a href="#connect">Connect</a></li>
+            <li><a href="#why">Why</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#join">Join</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">A Gathering for Families</div>
+            <div class="hero-badge">Summer 2025 • Near Barcelona</div>
             <h1>Raising kids<br>should feel like <span>magic</span></h1>
-            <p class="tagline">Not survival. Not management. Magic.</p>
+            <p class="tagline">Not survival mode. Not just getting by. Actual magic.</p>
             <p class="hero-description">
-                Tribe Camp is an experiment in family living. A week where parents remember what it feels like to have fun with their kids. Where children make friends across ages and continents. Where we build, create, sing, and discover that we're not meant to do this alone.
+                I'm organizing a week for families who are tired of doing this alone. We'll build stuff, make music, let kids roam, cook together, and remember what it feels like to actually enjoy our children. It's an experiment. I don't have all the answers. But I think it might be great.
             </p>
             <div>
-                <a href="#founding" class="btn">Be Part of the First</a>
-                <a href="#manifesto" class="btn btn-secondary">Read Our Manifesto</a>
+                <a href="#join" class="btn">Tell Me More</a>
+                <a href="#why" class="btn btn-secondary">Why This?</a>
             </div>
         </div>
     </section>
 
-    <!-- Manifesto Section -->
-    <section class="manifesto" id="manifesto">
+    <section class="manifesto" id="why">
         <div class="container">
-            <h2>The Manifesto</h2>
+            <h2>Why I'm Doing This</h2>
             
             <p class="manifesto-statement">
-                We believe raising children was never meant to be a solo sport. For most of human history, kids grew up in villages — surrounded by aunties, uncles, cousins, neighbors, elders. We've lost that. We want to build it back, one gathering at a time.
+                For most of human history, kids grew up surrounded by aunties, uncles, cousins, neighbors. Someone always had an eye on them. Someone was always making soup. We've lost that, and I think we're lonelier for it.
             </p>
             
             <div class="manifesto-divider">✦ ✦ ✦</div>
             
             <ul class="manifesto-points">
-                <li><strong>Intergenerational wisdom flows both ways.</strong> Teenagers mentor toddlers. New parents learn from those who've walked the path. Elders share stories. Everyone has something to teach.</li>
+                <li>
+                    <strong>Teenagers teach toddlers.</strong>
+                    And new parents learn from those who've been through it. Everyone has something to share, even if it's just "I survived three kids under five and here's what helped."
+                </li>
                 
-                <li><strong>Children are included, not segregated.</strong> No "kids' clubs" that warehouse children while adults drink elsewhere. We cook together, build together, create together. Kids belong in every space.</li>
+                <li>
+                    <strong>Kids are everywhere.</strong>
+                    No separate kids' club where they're warehoused so adults can drink in peace. We cook together. Build together. They belong in every space, even the messy ones.
+                </li>
                 
-                <li><strong>We leave things better than we found them.</strong> This isn't consumption — it's co-creation. We build the playground. We plant the garden. We make something that lasts.</li>
+                <li>
+                    <strong>Leave something behind.</strong>
+                    We'll build a treehouse or a playground. Plant something. Make the place better than we found it, not just take nice photos and leave.
+                </li>
                 
-                <li><strong>Joy is the point.</strong> Not productivity. Not optimization. We dance in the forest at sunset. We make terrible art and laugh about it. We remember that family life can be fun.</li>
+                <li>
+                    <strong>Joy is allowed.</strong>
+                    Dance in the forest at sunset. Make terrible art. Sing badly. Family life doesn't have to be a slog.
+                </li>
                 
-                <li><strong>The village is global.</strong> We bring together families from Singapore to Barcelona, from Warsaw to wherever you're reading this. Our children will inherit a connected world — let's help them thrive in it.</li>
-                
-                <li><strong>We're building the future by living it now.</strong> This isn't just a vacation. It's a prototype of the world we want our grandchildren to grow up in. More connection. More wonder. More tribe.</li>
+                <li>
+                    <strong>The village can be global.</strong>
+                    I'm imagining families from different countries, different backgrounds, all muddling through parenthood together. Our kids will inherit a connected world. Let's show them how to thrive in it.
+                </li>
             </ul>
         </div>
     </section>
 
-    <!-- The Invitation Section -->
-    <section class="invitation" id="invitation">
+    <section class="invitation" id="what">
         <div class="container-wide">
-            <h2>This Is What We're Building</h2>
+            <h2>What Actually Happens</h2>
             
             <p class="invitation-lead">
-                Imagine a week where your child makes a best friend who lives on another continent. Where you learn a recipe from a parent whose kitchen smells like home, even though their home is thousands of miles away. Where teenagers teach your toddler to drum, and you finally understand what all the hype is about.
+                A week near Barcelona at a villa called Casa Tio. Mid-to-late July 2025. We're figuring out exact dates based on who can come. There will probably be 8-10 families. Everything else is... flexible.
             </p>
             
             <div class="pillars">
                 <div class="pillar">
-                    <h3>🔨 Build Together</h3>
-                    <p>Leave your mark. Construct a treehouse, a gazebo, or a playground that future visitors will enjoy. We believe in creating lasting value.</p>
+                    <h3>🔨 Build things</h3>
+                    <p>Whatever we make — a treehouse, a gazebo, a weird sculpture — it stays. Future families will use it. That's the point.</p>
                 </div>
                 
                 <div class="pillar">
-                    <h3>🎵 Make Noise</h3>
-                    <p>Jam sessions for all ages. Learn an instrument, teach your child, or dance in the forest. Music has no age limit.</p>
+                    <h3>🎵 Make noise</h3>
+                    <p>Bring instruments if you have them. There will be jam sessions. There will be dancing. No one will care if you're bad at it.</p>
                 </div>
                 
                 <div class="pillar">
-                    <h3>🎨 Create Freely</h3>
-                    <p>Glitter, face paint, temporary tattoos, vision boards, LEGO towers. Art that parents actually enjoy doing alongside their kids.</p>
+                    <h3>🎨 Get messy</h3>
+                    <p>Glitter. Face paint. LEGOs everywhere. The kind of art projects that parents usually avoid because of the cleanup. (We'll clean up together.)</p>
                 </div>
                 
                 <div class="pillar">
-                    <h3>🌊 Explore Wildly</h3>
-                    <p>Beach trips, forest walks, tree climbing, swimming. Unstructured outdoor time where kids roam free (with eyes on them).</p>
+                    <h3>🌊 Go outside</h3>
+                    <p>Beach trips. Forest walks. Tree climbing. There's a pool at the villa. Kids will get dirty. It's fine.</p>
                 </div>
                 
                 <div class="pillar">
-                    <h3>👨‍🍳 Cook & Share</h3>
-                    <p>Communal meals prepared by participants. Learn recipes from around the world. Discover the joy of feeding each other.</p>
+                    <h3>👨‍🍳 Cook together</h3>
+                    <p>Communal meals. Everyone contributes. Teach me your grandmother's recipe. I'll teach you mine. We'll figure out the dietary restrictions as we go.</p>
                 </div>
                 
                 <div class="pillar">
-                    <h3>💡 Share Wisdom</h3>
-                    <p>Workshops led by us, for us. Sleep training advice from a parent of five. AI and creativity discussions. Everyone teaches.</p>
+                    <h3>💡 Share what you know</h3>
+                    <p>Got five kids and figured out sleep training? Work in AI and want to talk about the future? Know how to fix a bike? Teach us.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Dream Section -->
     <section class="dream" id="dream">
         <div class="container">
-            <h2>The Bigger Dream</h2>
+            <h2>The Bigger Picture (Maybe)</h2>
             
             <div class="dream-text">
                 <p>
-                    This first gathering is just the beginning. We imagine <strong>Tribe Camp becoming a global movement</strong> — festivals where intergenerational wisdom flows freely, where young people considering family life can witness what's possible, and where we collectively build the world we want to inherit.
+                    If this works — if this week is even half as good as I'm hoping — maybe we'll do it again. Maybe other people will do their own versions. Maybe we'll figure out how to support each other across borders, show up for birthdays, become the kind of tribe our kids grow up knowing they have.
                 </p>
                 
                 <p>
-                    We're starting small. One week. A handful of families. A villa near Barcelona. But the vision is vast: a network of families who support each other across borders, who show up for each other's milestones, whose children grow up knowing they have a tribe scattered across the globe.
+                    Or maybe it's just one good week with good people. That would be enough.
                 </p>
                 
                 <div class="dream-quote">
-                    "The nuclear family was an experiment. It hasn't worked out that well for most of us. Let's try something older, something more human: the tribe."
+                    The nuclear family was an experiment. It hasn't worked out that well for most of us. Let's try something older.
                 </div>
                 
                 <p>
-                    This is an invitation to be part of the founding story. The families who join us this first year won't just be attendees — they'll be co-creators, helping shape what Tribe Camp becomes for years to come.
+                    This first year, the families who come won't just be guests. You'll be co-creators, figuring out what this thing is alongside me. Fair warning: it's going to be messy. Also fair warning: it might be wonderful.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Founding Families Section -->
-    <section class="founding" id="founding">
+    <section class="founding" id="join">
         <div class="container">
             <h2>Be One of the First</h2>
             
             <p>
-                We're gathering 8-10 families for our inaugural edition at Casa Tio, a beautiful villa in the hills near Barcelona. Dates are tentatively mid-to-late July 2025 — we're coordinating with interested families to find the week that works for most.
+                I'm looking for 8-10 families. Kids of any age welcome — babies, teenagers, everything in between. You don't have to be "fun" or "crafty" or any particular type. You just have to be willing to show up, contribute something, and not freak out when things don't go to plan.
             </p>
             
             <div class="founding-details">
-                <h3>What we're looking for:</h3>
+                <h3>What you need to know:</h3>
                 <ul>
-                    <li>Families with children of any age (babies to teens)</li>
-                    <li>People excited about building, creating, and contributing</li>
-                    <li>Those who vibe with the manifesto above</li>
-                    <li>Early commitment (deposit) to help us secure the venue</li>
-                    <li>Comfort with some ambiguity — we're building this together</li>
+                    <li>Casa Tio, near Barcelona, probably mid-July 2025</li>
+                    <li>Shared rooms, communal spaces, not a hotel</li>
+                    <li>We'll need deposits to secure the venue</li>
+                    <li>English-speaking, internationally mixed group</li>
+                    <li>Low-key on substances — clear heads, present parents</li>
                 </ul>
             </div>
             
             <p>
-                This isn't a polished product. It's an experiment we're running together. If that excites you more than it scares you, we want to hear from you.
+                This isn't a polished product. It's an experiment. If that sounds exhausting, this probably isn't for you. If it sounds exciting, I want to hear from you.
             </p>
             
-            <a href="mailto:hello@tribecamp.org?subject=I'm%20interested%20in%20Tribe%20Camp%202025" class="btn btn-light">Express Interest</a>
+            <a href="mailto:hello@tribecamp.org?subject=Tribe%20Camp%202025" class="btn btn-light">Email Me</a>
         </div>
     </section>
 
-    <!-- Vibe Gallery -->
     <section class="vibe" id="vibe">
         <div class="container-wide">
-            <h2>The Vibe, In Short</h2>
+            <h2>Vibe Check</h2>
             
             <div class="vibe-grid">
                 <div class="vibe-card">
                     <div class="vibe-icon">🌲</div>
-                    <h4>Forest Dances</h4>
-                    <p>Daytime movement, not nightlife. Celebration without excess.</p>
+                    <h4>Forest dancing</h4>
+                    <p>Daytime, not nightlife. Movement without substances.</p>
                 </div>
                 
                 <div class="vibe-card">
                     <div class="vibe-icon">🏠</div>
-                    <h4>Shared Spaces</h4>
-                    <p>Communal living, shared meals, collective childcare.</p>
-                </div>
-                
-                <div class="vibe-card">
-                    <div class="vibe-icon">🌍</div>
-                    <h4>Global Family</h4>
-                    <p>English-speaking, internationally mixed, culturally curious.</p>
+                    <h4>Shared everything</h4>
+                    <p>Rooms, meals, childcare. It's communal or it's nothing.</p>
                 </div>
                 
                 <div class="vibe-card">
                     <div class="vibe-icon">🔧</div>
-                    <h4>DIY Spirit</h4>
-                    <p>We build what we need. Everyone contributes.</p>
+                    <h4>DIY energy</h4>
+                    <p>We build what we need. Everyone chips in.</p>
                 </div>
                 
                 <div class="vibe-card">
                     <div class="vibe-icon">☀️</div>
-                    <h4>Sun & Water</h4>
-                    <p>Beach nearby, pool at the villa, Mediterranean summer.</p>
-                </div>
-                
-                <div class="vibe-card">
-                    <div class="vibe-icon">✨</div>
-                    <h4>Low Substances</h4>
-                    <p>Family-friendly, clear-headed, present together.</p>
+                    <h4>Mediterranean summer</h4>
+                    <p>Beach nearby, pool at the villa, lots of sunscreen.</p>
                 </div>
                 
                 <div class="vibe-card">
                     <div class="vibe-icon">👶</div>
-                    <h4>All Ages Welcome</h4>
-                    <p>Babies, toddlers, kids, teens, parents, grandparents.</p>
+                    <h4>All ages</h4>
+                    <p>Babies, teens, grandparents. The more mix, the better.</p>
                 </div>
                 
                 <div class="vibe-card">
                     <div class="vibe-icon">🎸</div>
-                    <h4>Music Everywhere</h4>
-                    <p>Bring instruments. Impromptu jams. Dancing encouraged.</p>
+                    <h4>Music</h4>
+                    <p>Bring instruments. There will be noise. It's fine.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Connect Section -->
-    <section class="connect" id="connect">
+    <section class="connect" id="contact">
         <div class="container">
-            <h2>Let's Talk</h2>
+            <h2>Questions?</h2>
             
             <p>
-                Questions? Curious but not sure? Want to propose a different week that works better? We'd love to hear from you.
+                I don't have all the answers yet. Dates are flexible. Pricing is TBD. But if you're curious, or have a different week that works better, or just want to say "this sounds nuts but maybe?" — email me.
             </p>
             
             <div class="email-cta">
@@ -762,30 +703,26 @@
             </div>
             
             <p style="opacity: 0.7; font-size: 0.95rem; margin-top: 2rem;">
-                No spam. No pressure. Just a conversation about whether this weird, wonderful thing is right for your family.
+                No spam. No pressure. Just a conversation.
             </p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p><strong>🌲 Tribe Camp</strong></p>
-            <p style="margin-top: 0.5rem;">Building the village, one family at a time.</p>
-            <p style="margin-top: 1.5rem; font-size: 0.8rem; opacity: 0.5;">Emerging summer 2025 • Somewhere near Barcelona</p>
+            <p style="margin-top: 0.5rem;">An experiment in not doing this alone.</p>
+            <p style="margin-top: 1.5rem; font-size: 0.8rem; opacity: 0.5;">Summer 2025 • Near Barcelona • We'll see how it goes</p>
         </div>
     </footer>
 
-    <!-- Smooth Scroll -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
