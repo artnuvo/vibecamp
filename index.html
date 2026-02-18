@@ -452,6 +452,163 @@
             line-height: 1.5;
         }
         
+        /* Where Section */
+        .where {
+            background: linear-gradient(135deg, #e8f4f0 0%, var(--cream) 100%);
+        }
+
+        .where h2 {
+            text-align: center;
+            color: var(--forest);
+            margin-bottom: 1rem;
+        }
+
+        .where-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--sage);
+            margin-bottom: 3rem;
+        }
+
+        .where-subtitle a {
+            color: var(--terracotta);
+            text-decoration: none;
+        }
+
+        .where-subtitle a:hover {
+            text-decoration: underline;
+        }
+
+        .venue-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .venue-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .venue-gallery-main {
+            grid-row: span 2;
+        }
+
+        .venue-gallery-side {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .venue-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .venue-card {
+            background: white;
+            padding: 1.75rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .venue-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .venue-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .venue-card h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            color: var(--forest);
+            margin-bottom: 0.5rem;
+        }
+
+        .venue-card p {
+            font-size: 0.9rem;
+            color: var(--sage);
+            line-height: 1.5;
+        }
+
+        .hosts-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 4rem;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .hosts-image img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .hosts-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            color: var(--terracotta);
+            margin-bottom: 1rem;
+        }
+
+        .hosts-content p {
+            color: var(--forest);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--sand);
+            border-radius: 16px;
+            border-left: 4px solid var(--terracotta);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--forest);
+            margin-bottom: 1rem;
+        }
+
+        .testimonial .author {
+            font-style: normal;
+            font-weight: 600;
+            color: var(--sage);
+        }
+
+        @media (max-width: 768px) {
+            .venue-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .venue-gallery-main {
+                grid-row: span 1;
+            }
+
+            .hosts-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
         /* Connect Section */
         .connect {
             background: var(--forest);
@@ -546,6 +703,7 @@
         <a href="#" class="logo">🌲 Tribe Camp</a>
         <ul class="nav-links">
             <li><a href="#manifesto">Manifesto</a></li>
+            <li><a href="#where">Where</a></li>
             <li><a href="#dream">The Dream</a></li>
             <li><a href="#founding">Join Us</a></li>
             <li><a href="#connect">Connect</a></li>
@@ -663,13 +821,104 @@
         </div>
     </section>
 
+    <!-- Where Section -->
+    <section class="where" id="where">
+        <div class="container-wide">
+            <h2>Where?</h2>
+            <p class="where-subtitle">
+                <a href="https://www.eltilo.casa/" target="_blank">Casa Tilo</a> — a beautiful villa in the hills near Barcelona
+            </p>
+
+            <div class="venue-gallery">
+                <div class="venue-gallery-main">
+                    <img src="images/casa-tilo-main.jpg" alt="Casa Tilo main house surrounded by forest" loading="lazy">
+                </div>
+                <div class="venue-gallery-side">
+                    <img src="images/casa-tilo-pool.jpg" alt="Saltwater pool at Casa Tilo" loading="lazy">
+                    <img src="images/casa-tilo-terrace.jpg" alt="Terrace and outdoor spaces" loading="lazy">
+                </div>
+            </div>
+
+            <div class="venue-features">
+                <div class="venue-card">
+                    <div class="icon">🏔️</div>
+                    <h4>The Setting</h4>
+                    <p>Natural park location surrounded by forest with mountain views in every direction</p>
+                </div>
+                <div class="venue-card">
+                    <div class="icon">🏊</div>
+                    <h4>The Pool</h4>
+                    <p>Saltwater pool for cooling off after hiking or building adventures</p>
+                </div>
+                <div class="venue-card">
+                    <div class="icon">🥾</div>
+                    <h4>The Trails</h4>
+                    <p>Direct access to hiking paths through lush Mediterranean forest</p>
+                </div>
+                <div class="venue-card">
+                    <div class="icon">🏖️</div>
+                    <h4>The Beach</h4>
+                    <p>Mediterranean coast just a short drive away for seaside days</p>
+                </div>
+                <div class="venue-card">
+                    <div class="icon">✈️</div>
+                    <h4>Getting There</h4>
+                    <p>Barcelona airport is about 1 hour away — easy for international families</p>
+                </div>
+                <div class="venue-card">
+                    <div class="icon">🏠</div>
+                    <h4>The Space</h4>
+                    <p>Designed for up to 26 people — plenty of room for our tribe</p>
+                </div>
+            </div>
+
+            <div class="hosts-section">
+                <div class="hosts-image">
+                    <img src="images/hosts-richard-natalia.jpg" alt="Richard and Natalia, hosts of Casa Tilo" loading="lazy">
+                </div>
+                <div class="hosts-content">
+                    <h3>About the Hosts</h3>
+                    <p>
+                        Casa Tilo is hosted by <strong>Richard D. Bartlett</strong> and <strong>Natalia Lombardo</strong> — 
+                        they've spent over a decade supporting groups to collaborate more wisely in organisations, 
+                        social movements, and communities across many countries.
+                    </p>
+                    <p>
+                        They've learned that people grow best inside a small, well-held social context, 
+                        where there is trust, care, and enough structure to support agency rather than replace it.
+                    </p>
+                    <p>
+                        <em>"This is not just a house, it's a home, for ourselves and for our wider network 
+                        of interconnected communities."</em>
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p>
+                    "During our event I realized how much of a difference it makes, that we're in the middle of 
+                    a natural park: participants would go on walks together on the daily and come back relaxed 
+                    and with smiles on their faces; the different species of birds led us through the cycle of 
+                    each day with their distinct songs; when stepping outside all one sees beyond the patio is 
+                    forest and sky — in my experience this enabled our group to drop in with each other much 
+                    quicker and deeper."
+                </p>
+                <p class="author">— Jonas Groener, Facilitator at Civic Action Network</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://www.eltilo.casa/" target="_blank" class="btn">Visit Casa Tilo Website →</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Founding Families Section -->
     <section class="founding" id="founding">
         <div class="container">
             <h2>Be One of the First</h2>
             
             <p>
-                We're gathering 8-10 families for our inaugural edition at Casa Tio, a beautiful villa in the hills near Barcelona. <strong>July 19-25, 2026.</strong> That's the week. Save it.
+                We're gathering 8-10 families for our inaugural edition at <strong>Casa Tilo</strong>, a beautiful villa in the hills near Barcelona. <strong>July 19-25, 2026.</strong> That's the week. Save it.
             </p>
             
             <div class="founding-details">
@@ -765,7 +1014,7 @@
             
             <div class="faq-item" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(45,74,62,0.1);">
                 <h3 style="font-family: 'Space Grotesk', sans-serif; color: var(--terracotta); margin-bottom: 0.75rem; font-size: 1.1rem;">What do I need to bring?</h3>
-                <p>We'll send a packing list closer to the date. Think: comfortable clothes, sunscreen, maybe an instrument if you play one. Bedding and towels are provided at Casa Tio.</p>
+                <p>We'll send a packing list closer to the date. Think: comfortable clothes, sunscreen, maybe an instrument if you play one. Bedding and towels are provided at Casa Tilo.</p>
             </div>
             
             <div class="faq-item" style="margin-bottom: 2rem;">
@@ -799,7 +1048,7 @@
         <div class="container">
             <p><strong>🌲 Tribe Camp</strong></p>
             <p style="margin-top: 0.5rem;">Building the village, one family at a time.</p>
-            <p style="margin-top: 1.5rem; font-size: 0.8rem; opacity: 0.5;">July 19-25, 2026 • Casa Tio, near Barcelona</p>
+            <p style="margin-top: 1.5rem; font-size: 0.8rem; opacity: 0.5;">July 19-25, 2026 • Casa Tilo, near Barcelona</p>
         </div>
     </footer>
 
