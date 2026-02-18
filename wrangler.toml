@@ -6,4 +6,3 @@ compatibility_date = "2024-02-16"
 [assets]
 directory = "./"
 binding = "ASSETS"
-serve_directly = false
