@@ -1,26 +1,27 @@
-// Cloudflare Worker to serve static assets for VibeCamp (Tribe Camp) website
-// This worker serves the index.html and any static assets
+const REDIRECT_URL = 'https://coliven.com/events/c25ab192e5ec';
+
+const REDIRECT_HTML = `<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0;url=${REDIRECT_URL}">
+  <link rel="canonical" href="${REDIRECT_URL}">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <p>Redirecting to <a href="${REDIRECT_URL}">${REDIRECT_URL}</a></p>
+  <script>window.location.replace("${REDIRECT_URL}");</script>
+</body>
+</html>`;
 
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-
-    // Redirect tribecamp.org to coliven.com event page
-    if (url.hostname === 'tribecamp.org' || url.hostname === 'www.tribecamp.org') {
-      return Response.redirect('https://coliven.com/events/c25ab192e5ec', 301);
-    }
-
-    // Serve index.html for root path
-    if (url.pathname === '/' || url.pathname === '/index.html') {
-      return env.ASSETS.fetch(request);
-    }
-
-    // Try to serve static assets
-    try {
-      return await env.ASSETS.fetch(request);
-    } catch (e) {
-      // Fallback to index.html for SPA-style routing
-      return env.ASSETS.fetch(new Request(`${url.origin}/index.html`, request));
-    }
+    // Always redirect — HTML meta + JS fallback
+    return new Response(REDIRECT_HTML, {
+      status: 301,
+      headers: {
+        'Content-Type': 'text/html;charset=UTF-8',
+        'Location': REDIRECT_URL,
+      },
+    });
   }
 };
